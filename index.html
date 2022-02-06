@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics Portfolio</title>
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body background-color="#E6E6FA">
+    <div id="navigation" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="/rocket_basics/">Home</a>
+      <p>🚧 | Tutorials</p>
+      <a href="/rocket_basics/lesson1/">Coding Tools</a>
+      <a href="../lesson2/">Functions</a>
+      <a href="../lesson3/">Logic 1</a>
+      <a href="../lesson4/">Logic 2, State 1</a>
+      <a href="../lesson5/">State 2</a>
+      <a href="../lesson1/">Arrays, Loops 1</a>
+      <a href="../lesson1/">Loops 2, Git</a>
+      <a href="../lesson1/">Objects, Card Logic</a>
+      <a href="../lesson1/">Coding Strategies</a>
+      <a href="../lesson1/">Advanced</a>
+
+      <br />
+      <hr />
+      <br />
+
+      <p>🏆 | Projects</p>
+      <a href="../lesson1/">Scissors Paper Stone</a>
+      <a href="../lesson1/">High Card</a>
+      <a href="../lesson1/">Blackjack</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()" id="menu"
+      ><img
+        src="public/menu.png"
+        width="40px"
+        style="padding-top: 40px; padding-left: 40px"
+    /></span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <div id="profile">
+        <div class="avatar">
+          <img src="public/avatar.jpg" id="picture" />
+        </div>
+        <div class="description">
+          <h1>Hello! My name is Kai.</h1>
+          <p>
+            Neo Kai Yuan was in the tech industry even before he graduated from
+            Stanford University, starting out as an intern at Alibaba and
+            Facebook, and eventually becoming an engineering manager at
+            DanaCita, a student-focused loan startup based in Indonesia. After
+            all those experiences, he realized how difficult it was to hire good
+            engineers. That’s why he decided to set up an online coding school
+            in Singapore called Rocket Academy in 2019 to train software
+            engineers.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("navigation").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("navigation").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>
